@@ -1,11 +1,18 @@
 import React from 'react'
 import Layout from '../containers/layout'
+import api from '../api'
 
-const Products = () => {
-  return (
-    <Layout>
-      Products
-    </Layout>
-  )
+class Products extends React.Component {
+  async componentDidMount() {
+    const response = await api.products.getProducts()
+    console.log(response);
+  }
+  render() {
+    return (
+      <Layout>
+        Products
+      </Layout>
+    )
+  }
 }
 export default Products
