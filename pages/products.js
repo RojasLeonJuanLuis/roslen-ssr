@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Layout from '../containers/layout'
 import Product from '../components/product'
+import Loading from '../components/shared/loading'
 import api from '../api'
 
 import { ContainerProducts, SuperContainerProducts } from '../stylesheet/styles'
@@ -12,7 +13,7 @@ class Products extends Component {
     page: 1
   }
 
-  async componentWillMount() {
+  async componentDidMount() {
     const products = await api.products.getProducts(this.state.page)
     this.setState({
       products,
@@ -30,7 +31,7 @@ class Products extends Component {
     const viewportHeight = window.innerHeight
     const fullHeight = document.body.clientHeight
 
-    if (!(scrolled + viewportHeight + 300 >= fullHeight)) {
+    if (!(scrolled + viewportHeight + 350 >= fullHeight)) {
       return null;
     }
 
@@ -38,13 +39,17 @@ class Products extends Component {
       try {
         const products = await api.products.getProducts(this.state.page)
 
-        this.setState({
-          products: this.state.products.concat(products),
-          page: this.state.page + 1,
-          loading: false,
-        })
+        if(this.state.page < 10) {
+          this.setState({
+            products: this.state.products.concat(products),
+            page: this.state.page + 1,
+            loading: false,
+          })
+        }
       }catch(error) {
-        console.log(error);
+        this.setState({
+          loading: false
+        })
       }
     })
   }
@@ -57,9 +62,6 @@ class Products extends Component {
     return (
       <Layout>
         <div>
-          {this.state.loading && (
-            <div>Loading...</div>
-          )}
           <SuperContainerProducts>
             <ContainerProducts>
               {this.state.products.map(product => {
@@ -67,6 +69,9 @@ class Products extends Component {
               })}
             </ContainerProducts>
           </SuperContainerProducts>
+          {this.state.loading && (
+            <Loading />
+          )}
         </div>
       </Layout>
     )

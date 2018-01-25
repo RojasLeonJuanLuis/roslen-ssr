@@ -47,6 +47,10 @@ export const ContainerNavBar = styled.div`
   justify-items: center;
   justify-content: space-between;
   font-family: 'Cabin', sans-serif;
+  transition: .6s;
+  @media(max-width: 985px) {
+    width: 100%;
+  }
 `
 export const NavBarChildren = styled.div`
   display: grid;
@@ -65,4 +69,10 @@ export const NavBarLink = styled.a`
 `
 export const Roslen = styled.strong`
   font-size: 30px;
+`
+export const LoadingProducts = styled.div`
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: blue;
 `

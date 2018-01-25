@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Roslen = exports.NavBarLink = exports.NavBarChildren = exports.ContainerNavBar = exports.Nav = exports.Card = exports.SuperContainerProducts = exports.ContainerProducts = exports.Image = undefined;
+exports.LoadingProducts = exports.Roslen = exports.NavBarLink = exports.NavBarChildren = exports.ContainerNavBar = exports.Nav = exports.Card = exports.SuperContainerProducts = exports.ContainerProducts = exports.Image = undefined;
 
 var _styledComponents = require('styled-components');
 
@@ -34,7 +34,7 @@ var Nav = /*#__PURE__*/exports.Nav = _styledComponents2.default.nav.withConfig({
 var ContainerNavBar = /*#__PURE__*/exports.ContainerNavBar = _styledComponents2.default.div.withConfig({
   displayName: 'styles__ContainerNavBar',
   componentId: 's1ovvong-5'
-})(['display:grid;width:80%;margin:auto;grid-template-columns:50% 50%;padding-top:30px;padding-bottom:30px;justify-items:center;justify-content:space-between;font-family:\'Cabin\',sans-serif;']);
+})(['display:grid;width:80%;margin:auto;grid-template-columns:50% 50%;padding-top:30px;padding-bottom:30px;justify-items:center;justify-content:space-between;font-family:\'Cabin\',sans-serif;transition:.6s;@media(max-width:985px){width:100%;}']);
 var NavBarChildren = /*#__PURE__*/exports.NavBarChildren = _styledComponents2.default.div.withConfig({
   displayName: 'styles__NavBarChildren',
   componentId: 's1ovvong-6'
@@ -47,4 +47,8 @@ var Roslen = /*#__PURE__*/exports.Roslen = _styledComponents2.default.strong.wit
   displayName: 'styles__Roslen',
   componentId: 's1ovvong-8'
 })(['font-size:30px;']);
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlc2hlZXQvc3R5bGVzLmpzIl0sIm5hbWVzIjpbInN0eWxlZCIsIkltYWdlIiwiaW1nIiwiQ29udGFpbmVyUHJvZHVjdHMiLCJkaXYiLCJTdXBlckNvbnRhaW5lclByb2R1Y3RzIiwiQ2FyZCIsIk5hdiIsIm5hdiIsIkNvbnRhaW5lck5hdkJhciIsIk5hdkJhckNoaWxkcmVuIiwiTmF2QmFyTGluayIsImEiLCJSb3NsZW4iLCJzdHJvbmciXSwibWFwcGluZ3MiOiI7Ozs7Ozs7QUFBQSxBQUFPLEFBRVA7Ozs7OztBQUFPLElBQU0sZ0VBQUEsQUFBZTtlQUFmO2VBQUE7QUFBQSxDQUFRLEdBQWQsQUFHUDtBQUFPLElBQU0sd0ZBQUEsQUFBMkI7ZUFBM0I7ZUFBQTtBQUFBLENBQW9CLEdBQTFCLEFBVVA7QUFBTyxJQUFNLGtHQUFBLEFBQWdDO2VBQWhDO2VBQUE7QUFBQSxDQUF5QixHQUEvQixBQUdQO0FBQU8sSUFBTSw4REFBQSxBQUFjO2VBQWQ7ZUFBQTtBQUFBLENBQU8sR0FBYixBQWtCUDtBQUFPLElBQU0sNERBQUEsQUFBYTtlQUFiO2VBQUE7QUFBQSxDQUFNLEdBQVosQUFHUDtBQUFPLElBQU0sb0ZBQUEsQUFBeUI7ZUFBekI7ZUFBQTtBQUFBLENBQWtCLEdBQXhCLEFBV1A7QUFBTyxJQUFNLGtGQUFBLEFBQXdCO2VBQXhCO2VBQUE7QUFBQSxDQUFpQixHQUF2QixBQU9QO0FBQU8sSUFBTSwwRUFBQSxBQUFvQjtlQUFwQjtlQUFBO0FBQUEsQ0FBYSxHQUFuQixBQVFQO0FBQU8sSUFBTSxrRUFBQSxBQUFnQjtlQUFoQjtlQUFBO0FBQUEsQ0FBUyxHQUFmIiwiZmlsZSI6InN0eWxlcy5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvcm9qYXMvRGVza3RvcC9yb3NsZW4tc3NyIn0=
+var LoadingProducts = /*#__PURE__*/exports.LoadingProducts = _styledComponents2.default.div.withConfig({
+  displayName: 'styles__LoadingProducts',
+  componentId: 's1ovvong-9'
+})(['width:500px;height:500px;border-radius:50%;background:blue;']);
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlc2hlZXQvc3R5bGVzLmpzIl0sIm5hbWVzIjpbInN0eWxlZCIsIkltYWdlIiwiaW1nIiwiQ29udGFpbmVyUHJvZHVjdHMiLCJkaXYiLCJTdXBlckNvbnRhaW5lclByb2R1Y3RzIiwiQ2FyZCIsIk5hdiIsIm5hdiIsIkNvbnRhaW5lck5hdkJhciIsIk5hdkJhckNoaWxkcmVuIiwiTmF2QmFyTGluayIsImEiLCJSb3NsZW4iLCJzdHJvbmciLCJMb2FkaW5nUHJvZHVjdHMiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7QUFBQSxBQUFPLEFBRVA7Ozs7OztBQUFPLElBQU0sZ0VBQUEsQUFBZTtlQUFmO2VBQUE7QUFBQSxDQUFRLEdBQWQsQUFHUDtBQUFPLElBQU0sd0ZBQUEsQUFBMkI7ZUFBM0I7ZUFBQTtBQUFBLENBQW9CLEdBQTFCLEFBVVA7QUFBTyxJQUFNLGtHQUFBLEFBQWdDO2VBQWhDO2VBQUE7QUFBQSxDQUF5QixHQUEvQixBQUdQO0FBQU8sSUFBTSw4REFBQSxBQUFjO2VBQWQ7ZUFBQTtBQUFBLENBQU8sR0FBYixBQWtCUDtBQUFPLElBQU0sNERBQUEsQUFBYTtlQUFiO2VBQUE7QUFBQSxDQUFNLEdBQVosQUFHUDtBQUFPLElBQU0sb0ZBQUEsQUFBeUI7ZUFBekI7ZUFBQTtBQUFBLENBQWtCLEdBQXhCLEFBZVA7QUFBTyxJQUFNLGtGQUFBLEFBQXdCO2VBQXhCO2VBQUE7QUFBQSxDQUFpQixHQUF2QixBQU9QO0FBQU8sSUFBTSwwRUFBQSxBQUFvQjtlQUFwQjtlQUFBO0FBQUEsQ0FBYSxHQUFuQixBQVFQO0FBQU8sSUFBTSxrRUFBQSxBQUFnQjtlQUFoQjtlQUFBO0FBQUEsQ0FBUyxHQUFmLEFBR1A7QUFBTyxJQUFNLG9GQUFBLEFBQXlCO2VBQXpCO2VBQUE7QUFBQSxDQUFrQixHQUF4QiIsImZpbGUiOiJzdHlsZXMuanMiLCJzb3VyY2VSb290IjoiL1VzZXJzL3JvamFzL0Rlc2t0b3Avcm9zbGVuLXNzciJ9
