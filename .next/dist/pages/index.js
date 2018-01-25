@@ -21,9 +21,9 @@ var Home = function Home() {
   return _react2.default.createElement(_layout2.default, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 7
     }
   }, 'Home');
 };
 exports.default = Home;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbIlJlYWN0IiwiTGF5b3V0IiwiSG9tZSJdLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBQUEsQUFBTzs7OztBQUNQLEFBQU8sQUFBWTs7Ozs7Ozs7O0FBRW5CLElBQU0sT0FBTyxTQUFQLEFBQU8sT0FBTSxBQUNqQjt5QkFDRSxBQUFDOztnQkFBRDtrQkFBQTtBQUFBO0FBQUEsR0FBQSxFQURGLEFBQ0UsQUFJSDtBQU5ELEFBT0E7a0JBQUEsQUFBZSIsImZpbGUiOiJpbmRleC5qcz9lbnRyeSIsInNvdXJjZVJvb3QiOiIvVXNlcnMvcm9qYXMvRGVza3RvcC9yb3NsZW4tc3NyIn0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbIlJlYWN0IiwiTGF5b3V0IiwiSG9tZSJdLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBQUEsQUFBTzs7OztBQUNQLEFBQU8sQUFBWTs7Ozs7Ozs7O0FBR25CLElBQU0sT0FBTyxTQUFQLEFBQU8sT0FBTSxBQUNqQjt5QkFDRSxBQUFDOztnQkFBRDtrQkFBQTtBQUFBO0FBQUEsR0FBQSxFQURGLEFBQ0UsQUFLSDtBQVBELEFBUUE7a0JBQUEsQUFBZSIsImZpbGUiOiJpbmRleC5qcz9lbnRyeSIsInNvdXJjZVJvb3QiOiIvVXNlcnMvcm9qYXMvRGVza3RvcC9yb3NsZW4tc3NyIn0=

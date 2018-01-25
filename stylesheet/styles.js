@@ -62,13 +62,9 @@ export const NavBarChildren = styled.div`
 export const NavBarLink = styled.a`
   color: #000000;
   width: 50%;
-  font-size: 19px;
   &:hover {
     cursor: pointer;
   }
-`
-export const Roslen = styled.strong`
-  font-size: 30px;
 `
 export const LoadingProducts = styled.div`
   width: 500px;

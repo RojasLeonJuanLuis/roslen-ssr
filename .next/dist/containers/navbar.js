@@ -39,6 +39,19 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _jsxFileName = '/Users/rojas/Desktop/roslen-ssr/containers/navbar.js';
 
 
+var TitleRoslen = function TitleRoslen(props) {
+  return _react2.default.createElement('svg', props, _react2.default.createElement('style', null, '.st0', '{', 'font-family:\'Candal\'', '}', '.st1', '{', 'font-size:191.437px', '}'), _react2.default.createElement('text', {
+    transform: 'translate(35.553 165.918)',
+    className: 'st0 st1'
+  }, 'Roslen'));
+};
+
+TitleRoslen.defaultProps = {
+  id: 'Capa_1',
+  xmlns: 'http://www.w3.org/2000/svg',
+  viewBox: '0 0 783.5 190.5'
+};
+
 var Navbar = function (_Component) {
   (0, _inherits3.default)(Navbar, _Component);
 
@@ -56,36 +69,36 @@ var Navbar = function (_Component) {
       return _react2.default.createElement(_styles.Nav, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 23
         }
       }, _react2.default.createElement(_styles.ContainerNavBar, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 24
         }
       }, _react2.default.createElement(_styles.NavBarChildren, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 25
         }
       }, _react2.default.createElement(_link2.default, { href: '/', __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 26
         }
       }, _react2.default.createElement(_styles.NavBarLink, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 27
         }
-      }, _react2.default.createElement(_styles.Roslen, {
+      }, _react2.default.createElement(TitleRoslen, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 28
         }
-      }, 'Roslen')))), _react2.default.createElement(_styles.NavBarChildren, {
+      })))), _react2.default.createElement(_styles.NavBarChildren, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26
+          lineNumber: 32
         }
       }, links.map(function (link) {
         return _react2.default.createElement(_link2.default, {
@@ -93,12 +106,12 @@ var Navbar = function (_Component) {
           href: '' + link.to,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 28
+            lineNumber: 34
           }
         }, _react2.default.createElement(_styles.NavBarLink, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 32
+            lineNumber: 38
           }
         }, link.name));
       }))));
@@ -109,4 +122,4 @@ var Navbar = function (_Component) {
 }(_react.Component);
 
 exports.default = Navbar;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbnRhaW5lcnMvbmF2YmFyLmpzIl0sIm5hbWVzIjpbIlJlYWN0IiwiQ29tcG9uZW50IiwiTGluayIsIkNvbnRhaW5lck5hdkJhciIsIk5hdiIsIk5hdkJhckNoaWxkcmVuIiwiTmF2QmFyTGluayIsIlJvc2xlbiIsIk5hdmJhciIsImxvZ28iLCJsaW5rcyIsInRvIiwibmFtZSIsIm1hcCIsImxpbmsiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsQUFBTyxBQUFTOzs7O0FBQ2hCLEFBQU87Ozs7QUFFUCxBQUNFLEFBQ0EsQUFDQSxBQUNBLEFBQ0EsQUFDSzs7Ozs7OztJLEFBRWM7Ozs7Ozs7Ozs7OzZCQUNWLEFBQ1A7VUFBTSxPQUFOLEFBQWEsQUFDZjtVQUFNLFFBQVEsQ0FDYixFQUFDLElBQUQsQUFBSyxTQUFTLE1BREQsQUFDYixBQUFvQixlQUNwQixFQUFDLElBQUQsQUFBSyxXQUFXLE1BRkgsQUFFYixBQUFzQixjQUN0QixFQUFDLElBQUQsQUFBSyxZQUFZLE1BSGxCLEFBQWMsQUFHYixBQUF1QixBQUV0Qjs2QkFDRSxBQUFDOztvQkFBRDtzQkFBQSxBQUNFO0FBREY7QUFBQSxPQUFBLGtCQUNFLEFBQUM7O29CQUFEO3NCQUFBLEFBQ0U7QUFERjtBQUFBLHlCQUNFLEFBQUM7O29CQUFEO3NCQUFBLEFBQ0U7QUFERjtBQUFBLHlCQUNFLEFBQUMsZ0NBQUssTUFBTixBQUFXO29CQUFYO3NCQUFBLEFBQWU7QUFBZjt5QkFBZSxBQUFDOztvQkFBRDtzQkFBQSxBQUFZO0FBQVo7QUFBQSx5QkFBWSxBQUFDOztvQkFBRDtzQkFBQTtBQUFBO0FBQUEsU0FGL0IsQUFDRSxBQUNFLEFBQWUsQUFBWSxBQUU3Qiw4QkFBQSxBQUFDOztvQkFBRDtzQkFBQSxBQUNHO0FBREg7QUFBQSxlQUNHLEFBQU0sSUFBSSxnQkFBUSxBQUNqQjsrQkFBTyxBQUFDO2VBQ0QsS0FEQSxBQUNLLEFBQ1Y7cUJBQVMsS0FGSixBQUVTOztzQkFGVDt3QkFBQSxBQUlIO0FBSkc7QUFDTCxTQURLLGtCQUlILEFBQUM7O3NCQUFEO3dCQUFBLEFBQWE7QUFBYjtBQUFBLGdCQUpKLEFBQU8sQUFJSCxBQUFrQixBQUV2QjtBQWRULEFBQ0UsQUFDRSxBQUlFLEFBQ0csQUFZVjs7Ozs7QUEzQmlDLEE7O2tCQUFmLEEiLCJmaWxlIjoibmF2YmFyLmpzIiwic291cmNlUm9vdCI6Ii9Vc2Vycy9yb2phcy9EZXNrdG9wL3Jvc2xlbi1zc3IifQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbnRhaW5lcnMvbmF2YmFyLmpzIl0sIm5hbWVzIjpbIlJlYWN0IiwiQ29tcG9uZW50IiwiTGluayIsIlRpdGxlUm9zbGVuIiwiQ29udGFpbmVyTmF2QmFyIiwiTmF2IiwiTmF2QmFyQ2hpbGRyZW4iLCJOYXZCYXJMaW5rIiwiUm9zbGVuIiwiTmF2YmFyIiwibG9nbyIsImxpbmtzIiwidG8iLCJuYW1lIiwibWFwIiwibGluayJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxBQUFPLEFBQVM7Ozs7QUFDaEIsQUFBTzs7OztBQUlQLEFBQ0UsQUFDQSxBQUNBLEFBQ0EsQUFDQSxBQUNLOzs7Ozs7O0ksQUFSQSx1QkFBQSxBOzs7Ozs7O0FBQUEsQTs7Ozs7O0lBVWMsQTs7Ozs7Ozs7Ozs7NkJBQ1YsQUFDUDtVQUFNLE9BQU4sQUFBYSxBQUNmO1VBQU0sUUFBUSxDQUNiLEVBQUMsSUFBRCxBQUFLLFNBQVMsTUFERCxBQUNiLEFBQW9CLGVBQ3BCLEVBQUMsSUFBRCxBQUFLLFdBQVcsTUFGSCxBQUViLEFBQXNCLGNBQ3RCLEVBQUMsSUFBRCxBQUFLLFlBQVksTUFIbEIsQUFBYyxBQUdiLEFBQXVCLEFBRXRCOzZCQUNFLEFBQUM7O29CQUFEO3NCQUFBLEFBQ0U7QUFERjtBQUFBLE9BQUEsa0JBQ0UsQUFBQzs7b0JBQUQ7c0JBQUEsQUFDRTtBQURGO0FBQUEseUJBQ0UsQUFBQzs7b0JBQUQ7c0JBQUEsQUFDRTtBQURGO0FBQUEseUJBQ0UsQUFBQyxnQ0FBSyxNQUFOLEFBQVc7b0JBQVg7c0JBQUEsQUFDQTtBQURBO3lCQUNBLEFBQUM7O29CQUFEO3NCQUFBLEFBQ0U7QUFERjtBQUFBLHVDQUNFLEFBQUM7O29CQUFEO3NCQUpOLEFBQ0UsQUFDRSxBQUNBLEFBQ0UsQUFJSjtBQUpJO0FBQUEsNkJBSUosQUFBQzs7b0JBQUQ7c0JBQUEsQUFDRztBQURIO0FBQUEsZUFDRyxBQUFNLElBQUksZ0JBQVEsQUFDakI7K0JBQU8sQUFBQztlQUNELEtBREEsQUFDSyxBQUNWO3FCQUFTLEtBRkosQUFFUzs7c0JBRlQ7d0JBQUEsQUFJSDtBQUpHO0FBQ0wsU0FESyxrQkFJSCxBQUFDOztzQkFBRDt3QkFBQSxBQUFhO0FBQWI7QUFBQSxnQkFKSixBQUFPLEFBSUgsQUFBa0IsQUFFdkI7QUFsQlQsQUFDRSxBQUNFLEFBUUUsQUFDRyxBQVlWOzs7OztBQS9CaUMsQTs7a0JBQWYsQSIsImZpbGUiOiJuYXZiYXIuanMiLCJzb3VyY2VSb290IjoiL1VzZXJzL3JvamFzL0Rlc2t0b3Avcm9zbGVuLXNzciJ9

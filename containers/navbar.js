@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Link from 'next/link'
 
+import TitleRoslen from '../svgs/title-roslen.svg'
+
 import {
   ContainerNavBar,
   Nav,
@@ -21,7 +23,11 @@ export default class Navbar extends Component {
       <Nav>
         <ContainerNavBar>
           <NavBarChildren>
-            <Link href="/"><NavBarLink><Roslen>Roslen</Roslen></NavBarLink></Link>
+            <Link href="/">
+            <NavBarLink>
+              <TitleRoslen />
+            </NavBarLink>
+          </Link>
           </NavBarChildren>
           <NavBarChildren>
             {links.map(link => {
