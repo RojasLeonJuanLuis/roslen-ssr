@@ -22,6 +22,14 @@ const Product = (props) => {
           width: 90%;
           text-align: left;
           margin: auto;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-end;
+          bottom: 0;
+          margin-bottom: 0;
+          padding-bottom: 0;
         }
       `}
       </style>

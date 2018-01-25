@@ -29,6 +29,10 @@ export const Card = styled.div`
   flex-direction: column;
   box-shadow: 2px 2px 30px 2px #EBEBEB;
   font-family: 'Cabin', sans-serif;
+  transition: .4s;
+  &:hover {
+    transform: scale(1.03);
+  }
 `
 export const Nav = styled.nav`
   border-bottom: 1px solid rgb(246,246,246);
