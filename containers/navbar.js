@@ -12,6 +12,10 @@ import {
 } from '../stylesheet/styles'
 
 export default class Navbar extends Component {
+  state = {
+
+  }
+  
   render() {
     const logo = 'https://github.com/RojasLeonJuanLuis/images-roslen/blob/master/logo.png?raw=true';
 		const links = [
@@ -26,6 +30,7 @@ export default class Navbar extends Component {
             <Link href="/">
               <NavBarLink>
                 <TitleRoslen />
+                <div className="icon">x</div>
               </NavBarLink>
             </Link>
           </NavBarChildren>
@@ -40,6 +45,16 @@ export default class Navbar extends Component {
             })}
           </NavBarChildren>
         </ContainerNavBar>
+        <style jsx>{`
+          .icon {
+            display: none;
+          }
+          @media(max-width: 767px) {
+            .icon {
+              display: block;
+            }
+          }
+        `}</style>
       </Nav>
     )
   }
