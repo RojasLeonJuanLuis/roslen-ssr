@@ -7,7 +7,7 @@ import {
 const Product = (props) => {
   return (
     <Card>
-      <div>
+      <div className="container-image">
         <Image src={props.image} alt={props.name} />
       </div>
       <div className="props">
@@ -15,6 +15,9 @@ const Product = (props) => {
         <p className="left">{props.description}</p>
       </div>
       <style jsx>{`
+        .container-image {
+          border-bottom: 1px solid rgb(246,246,246);
+        }
         .props {
           width: 90%;
           text-align: left;
