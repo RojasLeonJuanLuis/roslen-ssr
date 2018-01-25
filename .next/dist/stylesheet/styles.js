@@ -34,7 +34,7 @@ var Nav = /*#__PURE__*/exports.Nav = _styledComponents2.default.nav.withConfig({
 var ContainerNavBar = /*#__PURE__*/exports.ContainerNavBar = _styledComponents2.default.div.withConfig({
   displayName: 'styles__ContainerNavBar',
   componentId: 's1ovvong-5'
-})(['display:grid;width:80%;margin:auto;grid-template-columns:50% 50%;padding-top:30px;padding-bottom:30px;justify-items:center;justify-content:space-between;font-family:\'Cabin\',sans-serif;transition:.6s;@media(max-width:985px){width:100%;}']);
+})(['display:grid;width:80%;margin:auto;grid-template-columns:50% 50%;padding-top:15px;padding-bottom:15px;justify-items:center;justify-content:space-between;font-family:\'Cabin\',sans-serif;transition:.6s;@media(max-width:985px){width:100%;}']);
 var NavBarChildren = /*#__PURE__*/exports.NavBarChildren = _styledComponents2.default.div.withConfig({
   displayName: 'styles__NavBarChildren',
   componentId: 's1ovvong-6'

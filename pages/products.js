@@ -13,7 +13,7 @@ class Products extends Component {
     page: 1
   }
 
-  async componentDidMount() {
+  async componentWillMount() {
     const products = await api.products.getProducts(this.state.page)
     this.setState({
       products,
@@ -25,7 +25,14 @@ class Products extends Component {
   }
 
   handleScroll = () => {
-    if(this.state.loading) { return null }
+    if(this.state.page > 5) {
+      return null
+      this.setState({
+        loading: false
+      })
+    }
+
+    if(this.state.loading) return null
 
     const scrolled = window.scrollY
     const viewportHeight = window.innerHeight
@@ -36,21 +43,13 @@ class Products extends Component {
     }
 
     this.setState({ loading: true }, async () => {
-      try {
-        const products = await api.products.getProducts(this.state.page)
+      const products = await api.products.getProducts(this.state.page)
 
-        if(this.state.page < 10) {
-          this.setState({
-            products: this.state.products.concat(products),
-            page: this.state.page + 1,
-            loading: false,
-          })
-        }
-      }catch(error) {
-        this.setState({
-          loading: false
-        })
-      }
+      this.setState({
+        products: this.state.products.concat(products),
+        page: this.state.page + 1,
+        loading: false,
+      })
     })
   }
 

@@ -42,8 +42,8 @@ export const ContainerNavBar = styled.div`
   width: 80%;
   margin: auto;
   grid-template-columns: 50% 50%;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   justify-items: center;
   justify-content: space-between;
   font-family: 'Cabin', sans-serif;
