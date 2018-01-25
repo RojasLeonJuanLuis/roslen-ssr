@@ -1,7 +1,13 @@
 import React, { Component } from 'react'
 import Link from 'next/link'
 
-import { ContainerNavBar } from '../stylesheet/styles'
+import {
+  ContainerNavBar,
+  Nav,
+  NavBarChildren,
+  NavBarLink,
+  Roslen
+} from '../stylesheet/styles'
 
 export default class Navbar extends Component {
   render() {
@@ -12,21 +18,23 @@ export default class Navbar extends Component {
 			{to: "products", name: "Productos"},
 		]
     return (
-      <ContainerNavBar>
-        <div>
-          <Link href="/"><a>Roslen</a></Link>
-        </div>
-        <div>
-          {links.map(link => {
-            return <Link
-              key={link.name}
-              href={`${link.to}`}
-              >
-                <a>{link.name}</a>
-              </Link>
-          })}
-        </div>
-      </ContainerNavBar>
+      <Nav>
+        <ContainerNavBar>
+          <NavBarChildren>
+            <Link href="/"><NavBarLink><Roslen>Roslen</Roslen></NavBarLink></Link>
+          </NavBarChildren>
+          <NavBarChildren>
+            {links.map(link => {
+              return <Link
+                key={link.name}
+                href={`${link.to}`}
+                >
+                  <NavBarLink>{link.name}</NavBarLink>
+                </Link>
+            })}
+          </NavBarChildren>
+        </ContainerNavBar>
+      </Nav>
     )
   }
 }
