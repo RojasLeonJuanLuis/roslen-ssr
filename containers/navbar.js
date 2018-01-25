@@ -24,12 +24,12 @@ export default class Navbar extends Component {
         <ContainerNavBar>
           <NavBarChildren>
             <Link href="/">
-            <NavBarLink>
-              <TitleRoslen />
-            </NavBarLink>
-          </Link>
+              <NavBarLink>
+                <TitleRoslen />
+              </NavBarLink>
+            </Link>
           </NavBarChildren>
-          <NavBarChildren>
+          <NavBarChildren className="hide">
             {links.map(link => {
               return <Link
                 key={link.name}
