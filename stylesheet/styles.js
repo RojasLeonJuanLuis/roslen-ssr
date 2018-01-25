@@ -38,10 +38,11 @@ export const Nav = styled.nav`
   border-bottom: 1px solid rgb(246,246,246);
 `
 export const ContainerNavBar = styled.div`
-  display: grid;
+  display: flex;
+  justify-content: space-around;
   width: 80%;
   margin: auto;
-  grid-template-columns: 50% 50%;
+  align-items: center;
   padding-top: 15px;
   padding-bottom: 15px;
   justify-items: center;
@@ -61,7 +62,7 @@ export const NavBarChildren = styled.div`
 `
 export const NavBarLink = styled.a`
   color: #000000;
-  width: 50%;
+  width: 100%;
   &:hover {
     cursor: pointer;
   }
