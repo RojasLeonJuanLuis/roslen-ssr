@@ -19,7 +19,7 @@ var api = {
   products: {
     getProducts: function () {
       var _ref = (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee() {
-        var page = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
+        var page = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
         var response, data;
         return _regenerator2.default.wrap(function _callee$(_context) {
           while (1) {
