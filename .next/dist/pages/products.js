@@ -72,7 +72,8 @@ var Products = function (_Component) {
     }
 
     return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = Products.__proto__ || (0, _getPrototypeOf2.default)(Products)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-      products: []
+      products: [],
+      loading: false
     }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
   }
 
@@ -92,7 +93,8 @@ var Products = function (_Component) {
                 products = _context.sent;
 
                 this.setState({
-                  products: products
+                  products: products,
+                  loading: true
                 });
 
               case 4:
@@ -115,18 +117,23 @@ var Products = function (_Component) {
       return _react2.default.createElement(_layout2.default, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 22
         }
       }, _react2.default.createElement('div', {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 23
         }
-      }, this.state.products.map(function (product) {
+      }, !this.state.loading && _react2.default.createElement('div', {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25
+        }
+      }, 'Loading...'), this.state.products.map(function (product) {
         return _react2.default.createElement(_product2.default, (0, _extends3.default)({ key: product.id }, product, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 23
+            lineNumber: 28
           }
         }));
       })));
@@ -137,4 +144,4 @@ var Products = function (_Component) {
 }(_react.Component);
 
 exports.default = Products;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL3Byb2R1Y3RzLmpzIl0sIm5hbWVzIjpbIlJlYWN0IiwiQ29tcG9uZW50IiwiTGF5b3V0IiwiUHJvZHVjdCIsImFwaSIsIlByb2R1Y3RzIiwic3RhdGUiLCJwcm9kdWN0cyIsImdldFByb2R1Y3RzIiwic2V0U3RhdGUiLCJtYXAiLCJwcm9kdWN0IiwiaWQiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsQUFBTyxBQUFTOzs7O0FBQ2hCLEFBQU8sQUFBWTs7OztBQUNuQixBQUFPLEFBQWE7Ozs7QUFDcEIsQUFBTyxBQUFTOzs7Ozs7Ozs7SUFFVixBOzs7Ozs7Ozs7Ozs7OztnTkFDSixBO2dCLEFBQVEsQUFDSTtBQURKLEFBQ047Ozs7Ozs7Ozs7Ozs7dUJBSXVCLGNBQUEsQUFBSSxTQUFKLEFBQWEsQTs7bUJBQTlCO0Esb0NBQ047O3FCQUFBLEFBQUs7NEJBQUwsQUFBYztBQUFBLEFBQ1o7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs2QkFJSyxBQUNQOzZCQUNFLEFBQUM7O29CQUFEO3NCQUFBLEFBQ0U7QUFERjtBQUFBLE9BQUEsa0JBQ0UsY0FBQTs7b0JBQUE7c0JBQUEsQUFDRztBQURIO0FBQUEsY0FDRyxBQUFLLE1BQUwsQUFBVyxTQUFYLEFBQW9CLElBQUksbUJBQVcsQUFDbEM7K0JBQU8sQUFBQywwREFBUSxLQUFLLFFBQWQsQUFBc0IsTUFBdEIsQUFBOEI7O3NCQUE5Qjt3QkFBUCxBQUFPLEFBQ1I7QUFEUTtBQUFBLFVBQUE7QUFKZixBQUNFLEFBQ0UsQUFDRyxBQU1SOzs7OztBQXRCb0IsQSxBQXlCdkI7O2tCQUFBLEFBQWUiLCJmaWxlIjoicHJvZHVjdHMuanM/ZW50cnkiLCJzb3VyY2VSb290IjoiL1VzZXJzL3JvamFzL0Rlc2t0b3Avcm9zbGVuLXNzciJ9
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL3Byb2R1Y3RzLmpzIl0sIm5hbWVzIjpbIlJlYWN0IiwiQ29tcG9uZW50IiwiTGF5b3V0IiwiUHJvZHVjdCIsImFwaSIsIlByb2R1Y3RzIiwic3RhdGUiLCJwcm9kdWN0cyIsImxvYWRpbmciLCJnZXRQcm9kdWN0cyIsInNldFN0YXRlIiwibWFwIiwicHJvZHVjdCIsImlkIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLEFBQU8sQUFBUzs7OztBQUNoQixBQUFPLEFBQVk7Ozs7QUFDbkIsQUFBTyxBQUFhOzs7O0FBQ3BCLEFBQU8sQUFBUzs7Ozs7Ozs7O0lBRVYsQTs7Ozs7Ozs7Ozs7Ozs7Z05BQ0osQTtnQkFBUSxBQUNJLEFBQ1Y7ZSxBQUZNLEFBRUc7QUFGSCxBQUNOOzs7Ozs7Ozs7Ozs7O3VCQUt1QixjQUFBLEFBQUksU0FBSixBQUFhLEE7O21CQUE5QjtBLG9DQUNOOztxQkFBQSxBQUFLOzRCQUFTLEFBRVo7MkJBRkYsQUFBYyxBQUVIO0FBRkcsQUFDWjs7Ozs7Ozs7Ozs7Ozs7Ozs7OzZCQUtLLEFBQ1A7NkJBQ0UsQUFBQzs7b0JBQUQ7c0JBQUEsQUFDRTtBQURGO0FBQUEsT0FBQSxrQkFDRSxjQUFBOztvQkFBQTtzQkFBQSxBQUNHO0FBREg7QUFBQSxVQUNJLEtBQUEsQUFBSyxNQUFOLEFBQVksMkJBQ1gsY0FBQTs7b0JBQUE7c0JBQUE7QUFBQTtBQUFBLE9BQUEsRUFGSixBQUVJLEFBRUQsb0JBQUEsQUFBSyxNQUFMLEFBQVcsU0FBWCxBQUFvQixJQUFJLG1CQUFXLEFBQ2xDOytCQUFPLEFBQUMsMERBQVEsS0FBSyxRQUFkLEFBQXNCLE1BQXRCLEFBQThCOztzQkFBOUI7d0JBQVAsQUFBTyxBQUNSO0FBRFE7QUFBQSxVQUFBO0FBUGYsQUFDRSxBQUNFLEFBSUcsQUFNUjs7Ozs7QUEzQm9CLEEsQUE4QnZCOztrQkFBQSxBQUFlIiwiZmlsZSI6InByb2R1Y3RzLmpzP2VudHJ5Iiwic291cmNlUm9vdCI6Ii9Vc2Vycy9yb2phcy9EZXNrdG9wL3Jvc2xlbi1zc3IifQ==

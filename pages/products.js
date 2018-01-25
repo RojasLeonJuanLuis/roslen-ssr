@@ -5,13 +5,15 @@ import api from '../api'
 
 class Products extends Component {
   state = {
-    products: []
+    products: [],
+    loading: false
   }
 
   async componentWillMount() {
     const products = await api.products.getProducts()
     this.setState({
-      products
+      products,
+      loading: true
     })
   }
 
@@ -19,6 +21,9 @@ class Products extends Component {
     return (
       <Layout>
         <div>
+          {!this.state.loading && (
+            <div>Loading...</div>
+          )}
           {this.state.products.map(product => {
             return <Product key={product.id} {...product} />
           })}

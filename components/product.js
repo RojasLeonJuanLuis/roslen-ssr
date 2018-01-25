@@ -4,7 +4,7 @@ const Product = (props) => {
   return (
     <div>
       <div>
-        {props.name}
+        <img style={{width: '20%'}} src={props.image} alt={props.name} />
       </div>
     </div>
   )
