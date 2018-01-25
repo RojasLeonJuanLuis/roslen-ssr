@@ -75,4 +75,5 @@ export const LoadingProducts = styled.div`
   height: 500px;
   border-radius: 50%;
   background: blue;
+  margin: auto;
 `
