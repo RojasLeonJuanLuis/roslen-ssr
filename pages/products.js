@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Layout from '../containers/layout'
+import Product from '../components/product'
 import api from '../api'
 
 class Products extends Component {
@@ -17,7 +18,11 @@ class Products extends Component {
   render() {
     return (
       <Layout>
-        Products
+        <div>
+          {this.state.products.map(product => {
+            return <Product key={product.id} {...product} />
+          })}
+        </div>
       </Layout>
     )
   }
