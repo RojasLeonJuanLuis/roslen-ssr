@@ -1,10 +1,17 @@
 import React from 'react'
+import styled from 'styled-components'
+
+const Hey = styled.img`
+  background: red;
+  width: 10%;
+`
+
 
 const Product = (props) => {
   return (
     <div>
       <div>
-        <img style={{width: '20%'}} src={props.image} alt={props.name} />
+        <Hey src={props.image} alt={props.name} />
       </div>
     </div>
   )
