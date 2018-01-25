@@ -32,6 +32,8 @@ var _link = require('next/dist/lib/link.js');
 
 var _link2 = _interopRequireDefault(_link);
 
+var _styles = require('../stylesheet/styles');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _jsxFileName = '/Users/rojas/Desktop/roslen-ssr/containers/navbar.js';
@@ -51,28 +53,29 @@ var Navbar = function (_Component) {
     value: function render() {
       var logo = 'https://github.com/RojasLeonJuanLuis/images-roslen/blob/master/logo.png?raw=true';
       var links = [{ to: "about", name: "Conócenos" }, { to: "contact", name: "Contacto" }, { to: "products", name: "Productos" }];
-      return _react2.default.createElement('div', {
+      return _react2.default.createElement(_styles.ContainerNavBar, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13
+          lineNumber: 15
         }
       }, _react2.default.createElement('div', {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14
+          lineNumber: 16
         }
       }, _react2.default.createElement(_link2.default, { href: '/', __source: {
           fileName: _jsxFileName,
-          lineNumber: 15
+          lineNumber: 17
         }
-      }, _react2.default.createElement('img', { src: logo, __source: {
-          fileName: _jsxFileName,
-          lineNumber: 15
-        }
-      }))), _react2.default.createElement('div', {
+      }, _react2.default.createElement('a', {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 17
+        }
+      }, 'Roslen'))), _react2.default.createElement('div', {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19
         }
       }, links.map(function (link) {
         return _react2.default.createElement(_link2.default, {
@@ -80,12 +83,12 @@ var Navbar = function (_Component) {
           href: '' + link.to,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 19
+            lineNumber: 21
           }
         }, _react2.default.createElement('a', {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 23
+            lineNumber: 25
           }
         }, link.name));
       })));
@@ -96,4 +99,4 @@ var Navbar = function (_Component) {
 }(_react.Component);
 
 exports.default = Navbar;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbnRhaW5lcnMvbmF2YmFyLmpzIl0sIm5hbWVzIjpbIlJlYWN0IiwiQ29tcG9uZW50IiwiTGluayIsIk5hdmJhciIsImxvZ28iLCJsaW5rcyIsInRvIiwibmFtZSIsIm1hcCIsImxpbmsiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsQUFBTyxBQUFTOzs7O0FBQ2hCLEFBQU87Ozs7Ozs7OztJLEFBRWM7Ozs7Ozs7Ozs7OzZCQUNWLEFBQ1A7VUFBTSxPQUFOLEFBQWEsQUFDZjtVQUFNLFFBQVEsQ0FDYixFQUFDLElBQUQsQUFBSyxTQUFTLE1BREQsQUFDYixBQUFvQixlQUNwQixFQUFDLElBQUQsQUFBSyxXQUFXLE1BRkgsQUFFYixBQUFzQixjQUN0QixFQUFDLElBQUQsQUFBSyxZQUFZLE1BSGxCLEFBQWMsQUFHYixBQUF1QixBQUV0Qjs2QkFDRSxjQUFBOztvQkFBQTtzQkFBQSxBQUNFO0FBREY7QUFBQSxPQUFBLGtCQUNFLGNBQUE7O29CQUFBO3NCQUFBLEFBQ0U7QUFERjtBQUFBLHlCQUNFLEFBQUMsZ0NBQUssTUFBTixBQUFXO29CQUFYO3NCQUFBLEFBQWU7QUFBZjtnREFBb0IsS0FBTCxBQUFVO29CQUFWO3NCQUZuQixBQUNFLEFBQ0UsQUFBZSxBQUVqQjtBQUZpQjs0QkFFakIsY0FBQTs7b0JBQUE7c0JBQUEsQUFDRztBQURIO0FBQUEsZUFDRyxBQUFNLElBQUksZ0JBQVEsQUFDakI7K0JBQU8sQUFBQztlQUNELEtBREEsQUFDSyxBQUNWO3FCQUFTLEtBRkosQUFFUzs7c0JBRlQ7d0JBQUEsQUFJSDtBQUpHO0FBQ0wsU0FESyxrQkFJSCxjQUFBOztzQkFBQTt3QkFBQSxBQUFJO0FBQUo7QUFBQSxnQkFKSixBQUFPLEFBSUgsQUFBUyxBQUVkO0FBYlAsQUFDRSxBQUlFLEFBQ0csQUFXUjs7Ozs7QUF6QmlDLEE7O2tCQUFmLEEiLCJmaWxlIjoibmF2YmFyLmpzIiwic291cmNlUm9vdCI6Ii9Vc2Vycy9yb2phcy9EZXNrdG9wL3Jvc2xlbi1zc3IifQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbnRhaW5lcnMvbmF2YmFyLmpzIl0sIm5hbWVzIjpbIlJlYWN0IiwiQ29tcG9uZW50IiwiTGluayIsIkNvbnRhaW5lck5hdkJhciIsIk5hdmJhciIsImxvZ28iLCJsaW5rcyIsInRvIiwibmFtZSIsIm1hcCIsImxpbmsiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsQUFBTyxBQUFTOzs7O0FBQ2hCLEFBQU87Ozs7QUFFUCxBQUFTLEFBQXVCOzs7Ozs7O0ksQUFFWDs7Ozs7Ozs7Ozs7NkJBQ1YsQUFDUDtVQUFNLE9BQU4sQUFBYSxBQUNmO1VBQU0sUUFBUSxDQUNiLEVBQUMsSUFBRCxBQUFLLFNBQVMsTUFERCxBQUNiLEFBQW9CLGVBQ3BCLEVBQUMsSUFBRCxBQUFLLFdBQVcsTUFGSCxBQUViLEFBQXNCLGNBQ3RCLEVBQUMsSUFBRCxBQUFLLFlBQVksTUFIbEIsQUFBYyxBQUdiLEFBQXVCLEFBRXRCOzZCQUNFLEFBQUM7O29CQUFEO3NCQUFBLEFBQ0U7QUFERjtBQUFBLE9BQUEsa0JBQ0UsY0FBQTs7b0JBQUE7c0JBQUEsQUFDRTtBQURGO0FBQUEseUJBQ0UsQUFBQyxnQ0FBSyxNQUFOLEFBQVc7b0JBQVg7c0JBQUEsQUFBZTtBQUFmO3lCQUFlLGNBQUE7O29CQUFBO3NCQUFBO0FBQUE7QUFBQSxTQUZuQixBQUNFLEFBQ0UsQUFBZSxBQUVqQiw2QkFBQSxjQUFBOztvQkFBQTtzQkFBQSxBQUNHO0FBREg7QUFBQSxlQUNHLEFBQU0sSUFBSSxnQkFBUSxBQUNqQjsrQkFBTyxBQUFDO2VBQ0QsS0FEQSxBQUNLLEFBQ1Y7cUJBQVMsS0FGSixBQUVTOztzQkFGVDt3QkFBQSxBQUlIO0FBSkc7QUFDTCxTQURLLGtCQUlILGNBQUE7O3NCQUFBO3dCQUFBLEFBQUk7QUFBSjtBQUFBLGdCQUpKLEFBQU8sQUFJSCxBQUFTLEFBRWQ7QUFiUCxBQUNFLEFBSUUsQUFDRyxBQVdSOzs7OztBQXpCaUMsQTs7a0JBQWYsQSIsImZpbGUiOiJuYXZiYXIuanMiLCJzb3VyY2VSb290IjoiL1VzZXJzL3JvamFzL0Rlc2t0b3Avcm9zbGVuLXNzciJ9

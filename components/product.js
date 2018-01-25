@@ -1,19 +1,16 @@
 import React from 'react'
-import styled from 'styled-components'
-
-const Hey = styled.img`
-  background: red;
-  width: 10%;
-`
-
+import {
+  Image,
+  Card
+} from '../stylesheet/styles'
 
 const Product = (props) => {
   return (
-    <div>
+    <Card>
       <div>
-        <Hey src={props.image} alt={props.name} />
+        <Image src={props.image} alt={props.name} />
       </div>
-    </div>
+    </Card>
   )
 }
 export default Product

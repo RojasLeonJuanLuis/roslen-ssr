@@ -52,6 +52,8 @@ var _api = require('../api');
 
 var _api2 = _interopRequireDefault(_api);
 
+var _styles = require('../stylesheet/styles');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _jsxFileName = '/Users/rojas/Desktop/roslen-ssr/pages/products.js?entry';
@@ -117,26 +119,31 @@ var Products = function (_Component) {
       return _react2.default.createElement(_layout2.default, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 24
         }
       }, _react2.default.createElement('div', {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 25
         }
       }, !this.state.loading && _react2.default.createElement('div', {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 27
         }
-      }, 'Loading...'), this.state.products.map(function (product) {
+      }, 'Loading...'), _react2.default.createElement(_styles.ContainerProducts, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
+        }
+      }, this.state.products.map(function (product) {
         return _react2.default.createElement(_product2.default, (0, _extends3.default)({ key: product.id }, product, {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 28
+            lineNumber: 31
           }
         }));
-      })));
+      }))));
     }
   }]);
 
@@ -144,4 +151,4 @@ var Products = function (_Component) {
 }(_react.Component);
 
 exports.default = Products;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL3Byb2R1Y3RzLmpzIl0sIm5hbWVzIjpbIlJlYWN0IiwiQ29tcG9uZW50IiwiTGF5b3V0IiwiUHJvZHVjdCIsImFwaSIsIlByb2R1Y3RzIiwic3RhdGUiLCJwcm9kdWN0cyIsImxvYWRpbmciLCJnZXRQcm9kdWN0cyIsInNldFN0YXRlIiwibWFwIiwicHJvZHVjdCIsImlkIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLEFBQU8sQUFBUzs7OztBQUNoQixBQUFPLEFBQVk7Ozs7QUFDbkIsQUFBTyxBQUFhOzs7O0FBQ3BCLEFBQU8sQUFBUzs7Ozs7Ozs7O0lBRVYsQTs7Ozs7Ozs7Ozs7Ozs7Z05BQ0osQTtnQkFBUSxBQUNJLEFBQ1Y7ZSxBQUZNLEFBRUc7QUFGSCxBQUNOOzs7Ozs7Ozs7Ozs7O3VCQUt1QixjQUFBLEFBQUksU0FBSixBQUFhLEE7O21CQUE5QjtBLG9DQUNOOztxQkFBQSxBQUFLOzRCQUFTLEFBRVo7MkJBRkYsQUFBYyxBQUVIO0FBRkcsQUFDWjs7Ozs7Ozs7Ozs7Ozs7Ozs7OzZCQUtLLEFBQ1A7NkJBQ0UsQUFBQzs7b0JBQUQ7c0JBQUEsQUFDRTtBQURGO0FBQUEsT0FBQSxrQkFDRSxjQUFBOztvQkFBQTtzQkFBQSxBQUNHO0FBREg7QUFBQSxVQUNJLEtBQUEsQUFBSyxNQUFOLEFBQVksMkJBQ1gsY0FBQTs7b0JBQUE7c0JBQUE7QUFBQTtBQUFBLE9BQUEsRUFGSixBQUVJLEFBRUQsb0JBQUEsQUFBSyxNQUFMLEFBQVcsU0FBWCxBQUFvQixJQUFJLG1CQUFXLEFBQ2xDOytCQUFPLEFBQUMsMERBQVEsS0FBSyxRQUFkLEFBQXNCLE1BQXRCLEFBQThCOztzQkFBOUI7d0JBQVAsQUFBTyxBQUNSO0FBRFE7QUFBQSxVQUFBO0FBUGYsQUFDRSxBQUNFLEFBSUcsQUFNUjs7Ozs7QUEzQm9CLEEsQUE4QnZCOztrQkFBQSxBQUFlIiwiZmlsZSI6InByb2R1Y3RzLmpzP2VudHJ5Iiwic291cmNlUm9vdCI6Ii9Vc2Vycy9yb2phcy9EZXNrdG9wL3Jvc2xlbi1zc3IifQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL3Byb2R1Y3RzLmpzIl0sIm5hbWVzIjpbIlJlYWN0IiwiQ29tcG9uZW50IiwiTGF5b3V0IiwiUHJvZHVjdCIsImFwaSIsIkNvbnRhaW5lclByb2R1Y3RzIiwiUHJvZHVjdHMiLCJzdGF0ZSIsInByb2R1Y3RzIiwibG9hZGluZyIsImdldFByb2R1Y3RzIiwic2V0U3RhdGUiLCJtYXAiLCJwcm9kdWN0IiwiaWQiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsQUFBTyxBQUFTOzs7O0FBQ2hCLEFBQU8sQUFBWTs7OztBQUNuQixBQUFPLEFBQWE7Ozs7QUFDcEIsQUFBTyxBQUFTOzs7O0FBRWhCLEFBQVMsQUFBeUI7Ozs7Ozs7SSxBQUU1Qjs7Ozs7Ozs7Ozs7Ozs7Z05BQ0osQTtnQkFBUSxBQUNJLEFBQ1Y7ZSxBQUZNLEFBRUc7QUFGSCxBQUNOOzs7Ozs7Ozs7Ozs7O3VCQUt1QixjQUFBLEFBQUksUyxBQUFKLEFBQWE7O21CQUE5QjtBLG9DQUNOOztxQkFBQSxBQUFLOzRCQUFTLEFBRVo7MkJBRkYsQUFBYyxBQUVIO0FBRkcsQUFDWjs7Ozs7Ozs7Ozs7Ozs7Ozs7OzZCQUtLLEFBQ1A7NkJBQ0UsQUFBQzs7b0JBQUQ7c0JBQUEsQUFDRTtBQURGO0FBQUEsT0FBQSxrQkFDRSxjQUFBOztvQkFBQTtzQkFBQSxBQUNHO0FBREg7QUFBQSxVQUNJLEtBQUEsQUFBSyxNQUFOLEFBQVksMkJBQ1gsY0FBQTs7b0JBQUE7c0JBQUE7QUFBQTtBQUFBLE9BQUEsRUFGSixBQUVJLEFBRUYsK0JBQUEsQUFBQzs7b0JBQUQ7c0JBQUEsQUFDRztBQURIO0FBQUEsY0FDRyxBQUFLLE1BQUwsQUFBVyxTQUFYLEFBQW9CLElBQUksbUJBQVcsQUFDbEM7K0JBQU8sQUFBQywwREFBUSxLQUFLLFFBQWQsQUFBc0IsTUFBdEIsQUFBOEI7O3NCQUE5Qjt3QkFBUCxBQUFPLEFBQ1I7QUFEUTtBQUFBLFVBQUE7QUFSakIsQUFDRSxBQUNFLEFBSUUsQUFDRyxBQU9WOzs7OztBQTdCb0IsQSxBQWdDdkI7O2tCQUFBLEFBQWUiLCJmaWxlIjoicHJvZHVjdHMuanM/ZW50cnkiLCJzb3VyY2VSb290IjoiL1VzZXJzL3JvamFzL0Rlc2t0b3Avcm9zbGVuLXNzciJ9

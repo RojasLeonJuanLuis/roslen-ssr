@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Link from 'next/link'
 
+import { ContainerNavBar } from '../stylesheet/styles'
+
 export default class Navbar extends Component {
   render() {
     const logo = 'https://github.com/RojasLeonJuanLuis/images-roslen/blob/master/logo.png?raw=true';
@@ -10,9 +12,9 @@ export default class Navbar extends Component {
 			{to: "products", name: "Productos"},
 		]
     return (
-      <div>
+      <ContainerNavBar>
         <div>
-          <Link href="/"><img src={logo} /></Link>
+          <Link href="/"><a>Roslen</a></Link>
         </div>
         <div>
           {links.map(link => {
@@ -24,7 +26,7 @@ export default class Navbar extends Component {
               </Link>
           })}
         </div>
-      </div>
+      </ContainerNavBar>
     )
   }
 }
