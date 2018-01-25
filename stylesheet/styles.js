@@ -39,13 +39,11 @@ export const Nav = styled.nav`
 `
 export const ContainerNavBar = styled.div`
   display: flex;
-  justify-content: space-around;
   width: 80%;
   margin: auto;
   align-items: center;
   padding-top: 15px;
   padding-bottom: 15px;
-  justify-items: center;
   justify-content: space-between;
   font-family: 'Cabin', sans-serif;
   transition: .6s;
@@ -62,9 +60,15 @@ export const NavBarChildren = styled.div`
 `
 export const NavBarLink = styled.a`
   color: #000000;
-  width: 100%;
+  width: 80%;
   &:hover {
     cursor: pointer;
+  }
+  @media(max-width: 985px) {
+    width: 100%;
+  }
+  @media(max-width: 767px) {
+    width: 100%;
   }
 `
 export const LoadingProducts = styled.div`
