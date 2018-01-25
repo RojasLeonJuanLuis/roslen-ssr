@@ -3,7 +3,7 @@ import Layout from '../containers/layout'
 import Product from '../components/product'
 import api from '../api'
 
-import { ContainerProducts } from '../stylesheet/styles'
+import { ContainerProducts, SuperContainerProducts } from '../stylesheet/styles'
 
 class Products extends Component {
   state = {
@@ -26,11 +26,13 @@ class Products extends Component {
           {!this.state.loading && (
             <div>Loading...</div>
           )}
-          <ContainerProducts>
-            {this.state.products.map(product => {
-              return <Product key={product.id} {...product} />
-            })}
-          </ContainerProducts>
+          <SuperContainerProducts>
+            <ContainerProducts>
+              {this.state.products.map(product => {
+                return <Product key={product.id} {...product} />
+              })}
+            </ContainerProducts>
+          </SuperContainerProducts>
         </div>
       </Layout>
     )

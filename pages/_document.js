@@ -13,7 +13,8 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          <title>My page</title>
+          <title>Comercializadora Roslen</title>
+          <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" />
           {this.props.styleTags}
         </Head>
         <body>
