@@ -17,13 +17,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _jsxFileName = '/Users/rojas/Desktop/roslen-ssr/pages/index.js?entry';
 
 
-var Home = function Home() {
+var Index = function Index() {
   return _react2.default.createElement(_layout2.default, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 6
     }
   }, 'Home');
 };
-exports.default = Home;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbIlJlYWN0IiwiTGF5b3V0IiwiSG9tZSJdLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBQUEsQUFBTzs7OztBQUNQLEFBQU8sQUFBWTs7Ozs7Ozs7O0FBR25CLElBQU0sT0FBTyxTQUFQLEFBQU8sT0FBTSxBQUNqQjt5QkFDRSxBQUFDOztnQkFBRDtrQkFBQTtBQUFBO0FBQUEsR0FBQSxFQURGLEFBQ0UsQUFLSDtBQVBELEFBUUE7a0JBQUEsQUFBZSIsImZpbGUiOiJpbmRleC5qcz9lbnRyeSIsInNvdXJjZVJvb3QiOiIvVXNlcnMvcm9qYXMvRGVza3RvcC9yb3NsZW4tc3NyIn0=
+exports.default = Index;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbIlJlYWN0IiwiTGF5b3V0IiwiSW5kZXgiXSwibWFwcGluZ3MiOiI7Ozs7OztBQUFBLEFBQU87Ozs7QUFDUCxBQUFPLEFBQVk7Ozs7Ozs7OztBQUVuQixJQUFNLFFBQVEsU0FBUixBQUFRLFFBQU0sQUFDbEI7eUJBQ0UsQUFBQzs7Z0JBQUQ7a0JBQUE7QUFBQTtBQUFBLEdBQUEsRUFERixBQUNFLEFBRUg7QUFKRCxBQUtBO2tCQUFBLEFBQWUiLCJmaWxlIjoiaW5kZXguanM/ZW50cnkiLCJzb3VyY2VSb290IjoiL1VzZXJzL3JvamFzL0Rlc2t0b3Avcm9zbGVuLXNzciJ9

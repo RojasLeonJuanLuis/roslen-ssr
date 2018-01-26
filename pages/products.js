@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import Layout from '../containers/layout'
 import Product from '../components/product'
 import Loading from '../components/shared/loading'
+import HeroProducts from '../components/hero-products'
+
 import api from '../api'
 
 import { ContainerProducts, SuperContainerProducts } from '../stylesheet/styles'
@@ -61,6 +63,7 @@ class Products extends Component {
     return (
       <Layout>
         <div>
+          <HeroProducts />
           <SuperContainerProducts>
             <ContainerProducts>
               {this.state.products.map(product => {
