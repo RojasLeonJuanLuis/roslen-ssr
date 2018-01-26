@@ -20,4 +20,5 @@ export const CardFetch = styled.div`
   border-radius: 4px;
   width: 25%;
   text-align: center;
+  height: 20%;
 `
