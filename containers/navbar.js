@@ -15,7 +15,7 @@ export default class Navbar extends Component {
   state = {
 
   }
-  
+
   render() {
     const logo = 'https://github.com/RojasLeonJuanLuis/images-roslen/blob/master/logo.png?raw=true';
 		const links = [
@@ -29,8 +29,10 @@ export default class Navbar extends Component {
           <NavBarChildren>
             <Link href="/">
               <NavBarLink>
-                <TitleRoslen />
-                <div className="icon">x</div>
+                <div className="logo-and-icon">
+                  <Roslen><TitleRoslen /></Roslen>
+                  <span>x</span>
+                </div>
               </NavBarLink>
             </Link>
           </NavBarChildren>
@@ -50,6 +52,16 @@ export default class Navbar extends Component {
             display: none;
           }
           @media(max-width: 767px) {
+            .logo-and-icon {
+              display: grid;
+              grid-template-columns: 50% 50%;
+              justify-content: space-between;
+            }
+            span {
+              background: blue;
+
+              text-align: right;
+            }
             .icon {
               display: block;
             }

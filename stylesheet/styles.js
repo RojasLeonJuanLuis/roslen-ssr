@@ -64,6 +64,10 @@ export const NavBarChildren = styled.div`
     flex-direction: column;
   }
 `
+export const Roslen = styled.div`
+  background: red;
+  width: 100%;
+`
 export const NavBarLink = styled.a`
   color: #424242;
   width: 140px;
@@ -75,6 +79,7 @@ export const NavBarLink = styled.a`
   @media(max-width: 985px) {
   }
   @media(max-width: 767px) {
+    width: 100%;
   }
 `
 export const LoadingProducts = styled.div`
