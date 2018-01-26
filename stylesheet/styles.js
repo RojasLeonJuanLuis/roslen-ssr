@@ -85,21 +85,52 @@ export const NavBarLink = styled.a`
   }
 `
 export const LoadingProducts = styled.div`
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: #93CCB6;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
   margin: auto;
-  animation-name: loading;
-  animation-duration: .5s;
+`
+export const Circle1 = styled.div`
+  width: 30px;
+  height: 30px;
+  background: #FDA066;
+  border-radius: 50%;
+  animation-name: circle1;
+  animation-duration: .4s;
   animation-iteration-count: infinite;
-  transition: .5s;
-  @keyframes loading {
-    0% {
-      transform: scale(.5);
-    }
-    100 {
-      transform: scale(1);
-    }
+  @keyframes circle1 {
+    0% { transform: scale(.5); }
+    100% { transform: scale(1); }
+  }
+`
+export const Circle2 = styled.div`
+  width: 30px;
+  height: 30px;
+  background: #FDA066;
+  border-radius: 50%;
+  animation-name: circle2;
+  animation-duration: .4s;
+  animation-iteration-count: infinite;
+  margin-left: 10px;
+  @keyframes circle2 {
+    0% { transform: scale(.5); }
+    100% { transform: scale(1); }
+  }
+`
+export const Circle3 = styled.div`
+  width: 30px;
+  height: 30px;
+  background: #FDA066;
+  border-radius: 50%;
+  animation-name: circle3;
+  animation-duration: .4s;
+  animation-iteration-count: infinite;
+  margin-left: 10px;
+  @keyframes circle3 {
+    0% { transform: scale(.5); }
+    100% { transform: scale(1); }
   }
 `

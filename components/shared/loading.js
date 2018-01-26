@@ -1,7 +1,9 @@
 import React from 'react'
 import {
   LoadingProducts,
-  Circle1
+  Circle1,
+  Circle2,
+  Circle3
 } from '../../stylesheet/styles'
 
 const Loading = () => {
