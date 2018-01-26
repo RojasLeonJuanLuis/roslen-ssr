@@ -5,9 +5,7 @@ import {
 
 const Loading = () => {
   return (
-    <LoadingProducts>
-      
-    </LoadingProducts>
+    <LoadingProducts></LoadingProducts>
   )
 }
 export default Loading
