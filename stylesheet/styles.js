@@ -66,6 +66,9 @@ export const NavBarChildren = styled.div`
 `
 export const Roslen = styled.div`
   width: 100%;
+  &:hover {
+    cursor: pointer;
+  }
 `
 export const NavBarLink = styled.a`
   color: #424242;

@@ -23,18 +23,17 @@ export default class Navbar extends Component {
 			{to: "contact", name: "Contacto"},
 			{to: "products", name: "Productos"},
 		]
+
+
+
     return (
       <Nav>
         <ContainerNavBar>
           <NavBarChildren>
-
-              <NavBarLink>
-                <div className="logo-and-icon">
-                  <Link href="/"><Roslen><TitleRoslen /></Roslen></Link>
-                  <span>x</span>
-                </div>
-              </NavBarLink>
-
+            <div className="logo-and-icon">
+              <Link href="/"><Roslen><TitleRoslen /></Roslen></Link>
+              <span className="icon-cross">x</span>
+            </div>
           </NavBarChildren>
           <div className="navbar-children">
             {links.map(link => {
@@ -48,30 +47,38 @@ export default class Navbar extends Component {
           </div>
         </ContainerNavBar>
         <style jsx>{`
-          .icon {
-            display: none;
+          .logo-and-icon {
+            width: 140px;
           }
           .navbar-children {
             display: flex;
             flex-direction: row;
+          }
+          .icon-cross {
+            display: none;
           }
           @media(max-width: 767px) {
             .logo-and-icon {
               display: grid;
               grid-template-columns: 50% 50%;
               justify-content: space-between;
+              width: 90%;
             }
             .navbar-children {
               display: flex;
               flex-direction: column;
               text-align: left;
-              width: 100%;
+              width: 90%;
+              display: none;
             }
             span {
               text-align: right;
             }
-            .icon {
+            .icon-cross {
               display: block;
+            }
+            .icon-cross:hover {
+              cursor: pointer;
             }
           }
         `}</style>
