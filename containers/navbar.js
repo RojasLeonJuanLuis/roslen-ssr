@@ -29,6 +29,7 @@ export default class Navbar extends Component {
 		]
 
     let icon = ''
+
     if(this.state.open) {
       icon = <div>Abierto</div>
     }
@@ -41,31 +42,31 @@ export default class Navbar extends Component {
           <NavBarChildren>
             <div className="logo-and-icon">
               <Link href="/"><Roslen><TitleRoslen /></Roslen></Link>
-              <span onClick={this.handleOpen} className="icon-cross">{icon}</span>
+              <span onClick={this.handleOpen} className="icon">{icon}</span>
             </div>
           </NavBarChildren>
-          {this.state.open && (
-            <div className="navbar-children">
-              {links.map(link => {
-                return <Link
-                  key={link.name}
-                  href={`${link.to}`}
-                  >
-                    <NavBarLink>{link.name}</NavBarLink>
-                  </Link>
-              })}
-            </div>
-          )}
+          <div className={`navbar-children-${this.state.open.toString()}`}>
+            {links.map(link => {
+              return <Link
+                key={link.name}
+                href={`${link.to}`}
+                >
+                  <NavBarLink>{link.name}</NavBarLink>
+                </Link>
+            })}
+          </div>
         </ContainerNavBar>
         <style jsx>{`
           .logo-and-icon {
+            display: flex;
+            align-items: center;
             width: 140px;
           }
-          .navbar-children {
+          .navbar-children-false {
             display: flex;
             flex-direction: row;
           }
-          .icon-cross {
+          .icon {
             display: none;
           }
           @media(max-width: 767px) {
@@ -75,11 +76,18 @@ export default class Navbar extends Component {
               justify-content: space-between;
               width: 90%;
             }
-            .navbar-children {
+
+            .navbar-children-false {
+              display: none;
+            }
+            .navbar-children-true {
               display: flex;
               flex-direction: column;
               text-align: left;
               width: 90%;
+            }
+            .icon {
+              display: block;
             }
             span {
               text-align: right;
