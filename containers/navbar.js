@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import Link from 'next/link'
 
 import TitleRoslen from '../svgs/title-roslen.svg'
+import Bars from '../svgs/bars.svg'
+import Cross from '../svgs/cross.svg'
 
 import {
   ContainerNavBar,
@@ -12,9 +14,7 @@ import {
 } from '../stylesheet/styles'
 
 export default class Navbar extends Component {
-  state = {
-    open: false
-  }
+  state = { open: false }
 
   handleOpen = () => {
     this.setState({ open: !this.state.open })
@@ -31,10 +31,10 @@ export default class Navbar extends Component {
     let icon = ''
 
     if(this.state.open) {
-      icon = <div>Abierto</div>
+      icon = <div className="bars"><Cross /></div>
     }
     else if(!this.state.open) {
-      icon = <div>Cerrado</div>
+      icon = <div className="cross"><Bars /></div>
     }
     return (
       <Nav>
