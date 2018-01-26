@@ -85,9 +85,21 @@ export const NavBarLink = styled.a`
   }
 `
 export const LoadingProducts = styled.div`
-  width: 500px;
-  height: 500px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
-  background: blue;
+  background: #93CCB6;
   margin: auto;
+  animation-name: loading;
+  animation-duration: .5s;
+  animation-iteration-count: infinite;
+  transition: .5s;
+  @keyframes loading {
+    0% {
+      transform: scale(.5);
+    }
+    100 {
+      transform: scale(1);
+    }
+  }
 `

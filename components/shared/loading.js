@@ -1,9 +1,16 @@
 import React from 'react'
-import { LoadingProducts } from '../../stylesheet/styles'
+import {
+  LoadingProducts,
+  Circle1
+} from '../../stylesheet/styles'
 
 const Loading = () => {
   return (
-    <LoadingProducts></LoadingProducts>
+    <LoadingProducts>
+      <Circle1></Circle1>
+      <Circle2></Circle2>
+      <Circle3></Circle3>
+    </LoadingProducts>
   )
 }
 export default Loading
