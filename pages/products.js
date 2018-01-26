@@ -68,7 +68,7 @@ class Products extends Component {
               })}
             </ContainerProducts>
           </SuperContainerProducts>
-          {this.state.loading && (
+          {! this.state.loading && (
             <Loading />
           )}
         </div>
