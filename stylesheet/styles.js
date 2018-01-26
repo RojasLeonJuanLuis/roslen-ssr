@@ -34,10 +34,10 @@ export const Card = styled.div`
     transform: scale(1.03);
   }
 `
-export const Nav = styled.nav`
+export const Nav = styled.header`
   border-bottom: 1px solid rgb(246,246,246);
 `
-export const ContainerNavBar = styled.div`
+export const ContainerNavBar = styled.nav`
   display: flex;
   width: 80%;
   margin: auto;
@@ -65,7 +65,6 @@ export const NavBarChildren = styled.div`
   }
 `
 export const Roslen = styled.div`
-  background: red;
   width: 100%;
 `
 export const NavBarLink = styled.a`

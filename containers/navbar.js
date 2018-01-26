@@ -27,16 +27,16 @@ export default class Navbar extends Component {
       <Nav>
         <ContainerNavBar>
           <NavBarChildren>
-            <Link href="/">
+
               <NavBarLink>
                 <div className="logo-and-icon">
-                  <Roslen><TitleRoslen /></Roslen>
+                  <Link href="/"><Roslen><TitleRoslen /></Roslen></Link>
                   <span>x</span>
                 </div>
               </NavBarLink>
-            </Link>
+
           </NavBarChildren>
-          <NavBarChildren className="hide">
+          <div className="navbar-children">
             {links.map(link => {
               return <Link
                 key={link.name}
@@ -45,11 +45,15 @@ export default class Navbar extends Component {
                   <NavBarLink>{link.name}</NavBarLink>
                 </Link>
             })}
-          </NavBarChildren>
+          </div>
         </ContainerNavBar>
         <style jsx>{`
           .icon {
             display: none;
+          }
+          .navbar-children {
+            display: flex;
+            flex-direction: row;
           }
           @media(max-width: 767px) {
             .logo-and-icon {
@@ -57,9 +61,13 @@ export default class Navbar extends Component {
               grid-template-columns: 50% 50%;
               justify-content: space-between;
             }
+            .navbar-children {
+              display: flex;
+              flex-direction: column;
+              text-align: left;
+              width: 100%;
+            }
             span {
-              background: blue;
-
               text-align: right;
             }
             .icon {
