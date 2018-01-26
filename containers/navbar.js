@@ -28,15 +28,20 @@ export default class Navbar extends Component {
 			{to: "products", name: "Productos"},
 		]
 
-
-
+    let icon = ''
+    if(this.state.open) {
+      icon = <div>Abierto</div>
+    }
+    else if(!this.state.open) {
+      icon = <div>Cerrado</div>
+    }
     return (
       <Nav>
         <ContainerNavBar>
           <NavBarChildren>
             <div className="logo-and-icon">
               <Link href="/"><Roslen><TitleRoslen /></Roslen></Link>
-              <span onClick={this.handleOpen} className="icon-cross">x</span>
+              <span onClick={this.handleOpen} className="icon-cross">{icon}</span>
             </div>
           </NavBarChildren>
           {this.state.open && (
