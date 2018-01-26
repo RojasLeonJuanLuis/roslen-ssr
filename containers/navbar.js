@@ -13,7 +13,11 @@ import {
 
 export default class Navbar extends Component {
   state = {
+    open: false
+  }
 
+  handleOpen = () => {
+    this.setState({ open: !this.state.open })
   }
 
   render() {
@@ -32,19 +36,21 @@ export default class Navbar extends Component {
           <NavBarChildren>
             <div className="logo-and-icon">
               <Link href="/"><Roslen><TitleRoslen /></Roslen></Link>
-              <span className="icon-cross">x</span>
+              <span onClick={this.handleOpen} className="icon-cross">x</span>
             </div>
           </NavBarChildren>
-          <div className="navbar-children">
-            {links.map(link => {
-              return <Link
-                key={link.name}
-                href={`${link.to}`}
-                >
-                  <NavBarLink>{link.name}</NavBarLink>
-                </Link>
-            })}
-          </div>
+          {this.state.open && (
+            <div className="navbar-children">
+              {links.map(link => {
+                return <Link
+                  key={link.name}
+                  href={`${link.to}`}
+                  >
+                    <NavBarLink>{link.name}</NavBarLink>
+                  </Link>
+              })}
+            </div>
+          )}
         </ContainerNavBar>
         <style jsx>{`
           .logo-and-icon {
@@ -69,7 +75,6 @@ export default class Navbar extends Component {
               flex-direction: column;
               text-align: left;
               width: 90%;
-              display: none;
             }
             span {
               text-align: right;
