@@ -5,6 +5,11 @@ const api = {
       const response = await fetch(`${BASE_URL}?_page=${page}`)
       const data = await response.json()
       return data
+    },
+    async getCleaningProducts() {
+      const response = await fetch(`${BASE_URL}?category=cleaning`)
+      const data = await response.json()
+      return data
     }
   }
 }
